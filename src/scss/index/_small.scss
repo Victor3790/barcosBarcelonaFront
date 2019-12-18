@@ -1,0 +1,12 @@
+// Small devices (landscape phones, 576px and up)
+@include media-breakpoint-up(sm){
+  .hero__text-container{
+    width: 250px;
+    margin: 0;
+    left: 25px;
+  }
+
+  .form{
+    padding: 50px 80px;
+  }
+}

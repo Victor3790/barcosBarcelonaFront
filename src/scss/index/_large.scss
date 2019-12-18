@@ -1,0 +1,45 @@
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-up(lg) {
+  .hero__text-container{
+    left: 90px;
+  }
+
+  .hero__text-top{
+    font-size: 16px;
+  }
+
+  .hero__text-header{
+    font-size: 28px;
+  }
+
+  .hero__text{
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .form{
+    padding: 150px 0;
+  }
+
+  .introduction__text{
+    padding: 0 150px;
+  }
+
+  .asset{
+    display: flex;
+  }
+
+  .asset:nth-child(even){
+    flex-direction: row-reverse;
+  }
+
+  .asset__image{
+    width: 50%;
+  }
+
+  .asset__text-container{
+    width: 50%;
+    padding: 60px;
+  }
+
+}

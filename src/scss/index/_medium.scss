@@ -1,0 +1,57 @@
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-up(md) {
+  .hero{
+    background-image: url('../../imgs/slider1.jpg');
+  }
+
+  .welcome{
+    margin-top: $sectionTopMarginLarge;
+  }
+
+  .welcome__title{
+    margin-bottom: $titleBottomMarginLarge;
+  }
+
+  .welcome__subtitle{
+    margin-bottom: $subtitleBottomMarginLarge;
+  }
+
+  .introduction{
+    margin-top: $sectionTopMarginLarge;
+    padding: 0 80px;
+  }
+
+  .introduction__title{
+    margin-bottom: $titleBottomMarginLarge;
+  }
+
+  .introduction__subtitle{
+    margin-bottom: $subtitleBottomMarginLarge;
+  }
+
+  .numbers{
+    margin-top: $sectionTopMarginLarge;
+  }
+
+  .numbers__title{
+    margin-bottom: $titleBottomMarginLarge;
+  }
+
+  .form{
+    background-image: url('../../imgs/form-background.jpg');
+    padding: 100px 0;
+  }
+
+  #asset__image1{
+    background-image: url('../../imgs/asset1.jpg');
+  }
+
+  #asset__image2{
+    background-image: url('../../imgs/asset2.jpg');
+  }
+
+  #asset__image3{
+    background-image: url('../../imgs/asset3.jpg');
+  }
+
+}

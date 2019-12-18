@@ -1,0 +1,29 @@
+$headerBackgroundColor: rgba(0,0,0,0.8);
+$menuBackgroundColor: rgba(10,10,10,0.8);
+
+.bbHeader{
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+.bbHeader__logo-container{
+  background-color: $headerBackgroundColor;
+  color: #fff;
+}
+
+.bbHeader__logo{
+  font-family: $sansSerifFont;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.bbHeader__menu-container{
+  background-color: $menuBackgroundColor;
+}
+
+@import "./medium";
+@import "./large";
+@import "./xLarge";
