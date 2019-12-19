@@ -1,0 +1,6 @@
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-up(lg) {
+  .bbFooter__social{
+    padding: 35px 10px;
+  }
+}

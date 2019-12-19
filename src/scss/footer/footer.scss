@@ -1,0 +1,32 @@
+$footerBackgroundColor: #191919;
+
+.bbFooter{
+  background-color: $footerBackgroundColor;
+  padding: 30px 0;
+  margin-top: $sectionTopMarginSmall;
+}
+
+.bbFooter__title{
+  color: #fff;
+  margin-top: 35px;
+}
+
+.bbFooter__text{
+  color: #a2a2a2;
+  text-align: center;
+}
+
+.bbFooter__social{
+  display: flex;
+  padding: 30px 90px;
+  justify-content: space-around;
+}
+
+.bbFooter__social-icon{
+  width: 30px;
+  cursor: pointer;
+}
+
+@import "./medium";
+@import "./large";
+@import "./xLarge";
