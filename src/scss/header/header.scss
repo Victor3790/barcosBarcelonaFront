@@ -1,27 +1,66 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
 $headerBackgroundColor: rgba(0,0,0,0.8);
-$menuBackgroundColor: rgba(10,10,10,0.8);
+$menuBackgroundColor: rgba(10,10,10,0.7);
 
-.bbHeader{
-  position: absolute;
-  top: 0;
-  z-index: 2;
+@import "../vars";
+
+.cbtHeader{
   width: 100%;
+  background-color: #000;
+  overflow: hidden;
 }
 
-.bbHeader__logo-container{
-  background-color: $headerBackgroundColor;
-  color: #fff;
+.cbtHeader__logo-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.bbHeader__logo{
+.cbtHeader__logo-text{
   font-family: $sansSerifFont;
+  color: $lightGray;
   text-transform: uppercase;
   text-align: center;
-  padding: 40px 0;
 }
 
-.bbHeader__menu-container{
-  background-color: $menuBackgroundColor;
+.custom-logo{
+  height: 25px!important;
+  width: 125px!important;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cbtHeader__menu-container-small{
+  position: fixed;
+  top: 0;
+  width: 0;
+  z-index: 3;
+  padding-top: 85px;
+  background-color: #000;
+}
+
+.cbtHeader__navList-container-small{
+  display: none;
+  color: #e0e0e0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  li{
+    margin: 30px 0;
+  }
+}
+
+.cbtHeader__menu-container{
+  display: none;
+}
+
+.cbtHeader__navList-container{
+  display: none;
 }
 
 @import "./medium";

@@ -1,9 +1,5 @@
 // Large devices (desktops, 992px and up)
 @include media-breakpoint-up(lg) {
-  .hero__text-container{
-    left: 90px;
-  }
-
   .hero__text-top{
     font-size: 16px;
   }
@@ -15,6 +11,18 @@
   .hero__text{
     font-size: 16px;
     line-height: 20px;
+  }
+
+  #slide1 .hero__text-container{
+    left: 500px;
+  }
+
+  #slide2 .hero__text-container{
+    left: 200px;
+  }
+
+  #slide3 .hero__text-container{
+    left: 300px;
   }
 
   .form{

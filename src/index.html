@@ -4,34 +4,177 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Playfair+Display:400,700&display=swap" rel="stylesheet">
-  <title>IBIZA YACHTING PROUP & BARCOS BARCELONA</title>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <!--<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="https://github.hubspot.com/odometer/odometer.js"></script>
+  <link rel="stylesheet" href="https://github.hubspot.com/odometer/themes/odometer-theme-minimal.css" />
+  <title>IBIZA YACHTING GROUP</title>
+  <style type="text/css">
+    .hero{
+      background-position: center;
+    }
+
+    #slide1{
+      background-image: url("/src/imgs/slide1Small.jpg");
+    }
+    #slide2{
+      background-image: url("/src/imgs/slide2Small.jpg");
+    }
+    #slide3{
+      background-image: url("/src/imgs/slide3Small.jpg");
+    }
+    .form{
+      background-image: url("/src/imgs/form-backgroundSmall.jpg");
+    }
+    #asset__image1{
+      background-image: url("/src/imgs/asset1Small.jpg");
+    }
+
+    #asset__image2{
+      background-image: url("/src/imgs/asset2Small.jpg");
+    }
+
+    #asset__image3{
+      background-image: url("/src/imgs/asset3Small.jpg");
+    }
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: 576px),
+    only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: 576px),
+    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-width: 576px),
+    only screen and (        min-device-pixel-ratio: 2)      and (max-width: 576px),
+    only screen and (                min-resolution: 192dpi) and (max-width: 576px),
+    only screen and (                min-resolution: 2dppx)  and (max-width: 576px) {
+
+      .hero{
+        background-position: bottom;
+      }
+
+      #slide1{
+        background-image: url("/src/imgs/slide1SmallRetina.jpg");
+      }
+      #slide2{
+        background-image: url("/src/imgs/slide2SmallRetina.jpg");
+      }
+      #slide3{
+        background-image: url("/src/imgs/slide3SmallRetina.jpg");
+      }
+
+    }
+
+    @media (min-width: 768px){
+      #slide1{
+        background-image: url("/src/imgs/slide1.jpg");
+      }
+      #slide2{
+        background-image: url("/src/imgs/slide2.jpg");
+      }
+      #slide3{
+        background-image: url("/src/imgs/slide3.jpg");
+      }
+      .form{
+        background-image: url("/src/imgs/form-background.jpg");
+      }
+      #asset__image1{
+        background-image: url("/src/imgs/asset1.jpg");
+      }
+
+      #asset__image2{
+        background-image: url("/src/imgs/asset2.jpg");
+      }
+
+      #asset__image3{
+        background-image: url("/src/imgs/asset3.jpg");
+      }
+    }
+  </style>
 </head>
 <body>
-  <header class="bbHeader">
-    <div class="bbHeader__logo-container">
-      <h5 class="bbHeader__logo">IBIZA YACHTING PROUP & BARCOS BARCELONA</h5>
+  <header class="cbtHeader">
+    <div class="cbtHeader__logo-container">
+      <img class="custom-logo" src="./imgs/logo.png" alt="">
+      <h5 class="cbtHeader__logo-text">IBIZA YACHTING GROUP</h5>
     </div>
-    <div class="bbHeader__menu-container">
-
+    <div id="smallMenuIcon" class="cbtSmallMenu">
+      <div class="cbtSmallMenu__bar"></div>
+      <div class="cbtSmallMenu__bar"></div>
+      <div class="cbtSmallMenu__bar"></div>
+    </div>
+    <div class="cbtHeader__menu-container">
+      <ul class="cbtHeader__navList-container">
+        <li>About</li>
+        <li>Yachts</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div id="smallMenu" class="cbtHeader__menu-container-small">
+      <span id="close" class="cbtSmallMenu__close"></span>
+      <ul class="cbtHeader__navList-container-small">
+        <li>About</li>
+        <li>Yachts</li>
+        <li>Contact</li>
+      </ul>
     </div>
   </header>
 
-  <div class="hero">
-    <div class="hero__text-container">
-      <!--<p class="hero__text-top">
-        Luxury yatching experts
-      </p>-->
-      <h5 class="hero__text-header">
-        Alquiler de yates a motor
-      </h5>
-      <p class="hero__text">
-        Descubra una experiencia única a bordo de nuestros yates de lujo en Ibiza.
-      </p>
-      <div class="button button--black">
-        <p>Leer más</p>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+      <div id="slide1" class="hero">
+        <div class="hero__text-container">
+          <h5 class="hero__text-header">
+            Alquiler de yates en Ibiza
+          </h5>
+          <p class="hero__text">
+            Toda la oferta náutica a su alcance en una sola gestión y sin costes adicionales.
+          </p>
+          <div class="button button--black">
+            <p>Leer más</p>
+          </div>
+        </div>
       </div>
     </div>
+
+    <div class="swiper-slide">
+      <div id="slide2" class="hero">
+        <div class="hero__text-container">
+          <h5 class="hero__text-header">
+            Alquiler de yates de lujo
+          </h5>
+          <p class="hero__text">
+            Disfrute del privilegio de tener su barco en el lugar del mundo que desee.
+          </p>
+          <div class="button button--black">
+            <p>Leer más</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div id="slide3" class="hero">
+        <div class="hero__text-container">
+          <h5 class="hero__text-header">
+            LUXURY YACHTING EXPERTS
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
   </div>
 
   <div class="welcome">
@@ -99,29 +242,35 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h4 class="numbers__title">IBIZA YACHTING PROUP & BARCOS BARCELONA <br> en cifras</h4>
+          <h4 class="numbers__title">IBIZA YACHTING GROUP<br> en cifras</h4>
           <div class="title-line"></div>
         </div>
       </div>
       <div class="row">
         <div class="col-12 col-lg-4">
-          <div class="numbers__item">
+          <div id="scene1" class="numbers__item">
             <p class="numbers__item-top">Más de</p>
-            <p class="numbers__item-number">200</p>
+            <div class="numbers__item-number">
+              <div id="odometer1" class="odometer">000</div>
+            </div>
             <h4 class="numbers__item-text">yates gestionados</h4>
           </div>
         </div>
         <div class="col-12 col-lg-4">
-          <div class="numbers__item">
+          <div id="scene2" class="numbers__item">
             <p class="numbers__item-top">Más de</p>
-            <p class="numbers__item-number">600</p>
+            <div class="numbers__item-number">
+              <div id="odometer2" class="odometer">000</div>
+            </div>
             <h4 class="numbers__item-text">clientes satisfechos</h4>
           </div>
         </div>
         <div class="col-12 col-lg-4">
-          <div class="numbers__item">
+          <div id="scene3" class="numbers__item">
             <p class="numbers__item-top">Más de</p>
-            <p class="numbers__item-number">15</p>
+            <div class="numbers__item-number">
+              <div id="odometer3" class="odometer">000</div>
+            </div>
             <h4 class="numbers__item-text">años de experiencia</h4>
           </div>
         </div>
@@ -167,6 +316,10 @@
     </div>
   </div>
 
+  <div id="toTop" class="toTop__container">
+    <img class="toTop" src="imgs/top.png" alt="">
+  </div>
+
   <footer class="bbFooter">
     <div class="container">
       <div class="row">
@@ -178,7 +331,7 @@
             07800 (Ibiza).
           </p>
           <p class="bbFooter__text">
-            Llámanos: 620 269 020. <br>
+            Llámanos: 620 269 020 <br>
             Escríbenos: correo@barcosbarcelona.com
           </p>
         </div>
@@ -194,7 +347,6 @@
         <div class="col-12 col-md-4">
           <div class="bbFooter__social">
             <img class="bbFooter__social-icon" src="imgs/facebook.png" alt="">
-            <img class="bbFooter__social-icon" src="imgs/googleplus.png" alt="">
             <img class="bbFooter__social-icon" src="imgs/twitter.png" alt="">
             <img class="bbFooter__social-icon" src="imgs/pinterest.png" alt="">
           </div>

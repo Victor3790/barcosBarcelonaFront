@@ -1,11 +1,5 @@
 // Extra large devices (large desktops, 1200px and up)
 @include media-breakpoint-up(xl) {
-  .hero__text-container{
-    width: 350px;
-    top: 200px;
-    left: 200px;
-  }
-
   .hero__text-top{
     font-size: 18px;
   }
@@ -17,5 +11,18 @@
   .hero__text{
     font-size: 18px;
     line-height: 25px;
+  }
+
+  #slide1 .hero__text-container{
+    top: 140px;
+    left: 63%;
+  }
+
+  #slide2 .hero__text-container{
+    left: 50px;
+  }
+
+  #slide3 .hero__text-container{
+    left: 69%;
   }
 }

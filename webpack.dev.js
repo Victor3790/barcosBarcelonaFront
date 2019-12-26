@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
   entry: {
     index: [path.resolve(__dirname,'src/indexDevEntry.js'),path.resolve(__dirname,'src/indexEntry.js')],
+    page: [path.resolve(__dirname,'src/pageDevEntry.js'),path.resolve(__dirname,'src/pageEntry.js')]
   },
   mode: 'development',
   devServer: {
@@ -25,22 +26,16 @@ module.exports = {
       }
     ]
   },
-  /*resolve: {
-    alias: {
-        "ScrollMagic": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/ScrollMagic.js'),
-        "debug.addIndicators": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js')
-    },
-  },*/
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname,'src/index.html'),
       chunks: ['index'],
       filename: './index.html'
     }),
-    /*new HtmlWebpackPlugin({
-      template: path.resolve(__dirname,'src/portfolio.html'),
-      chunks: ['portfolio'],
-      filename: './portfolio.html'
-    })*/
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname,'src/page.html'),
+      chunks: ['page'],
+      filename: './page.html'
+    })
   ]
 };

@@ -1,12 +1,12 @@
-@import "../main/main";
-@import "../header/header";
-@import "../footer/footer";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+@import "../vars";
 
 .hero{
-  height: 100vh;
-  position: relative;
-  background-image: url('../../imgs/slider1Small.jpg');
-  background-position: center;
+  height: calc(100vh - 100px);
+  min-height: 400px;
   background-size: cover;
 }
 
@@ -14,30 +14,36 @@
   width: 90%;
   margin: 0 auto;
   position: relative;
-  top: 137px;
-  background-color: rgba(255,255,255,0.7);
-  padding: 15px;
   .button{
     width: 80px;
   }
 }
 
-.hero__text-top{
-  font-size: 14px;
-  font-family: $serifFont;
-  margin-bottom: 3px;
-}
-
 .hero__text-header{
   font-size: 25px;
   font-weight: 700;
+  line-height: 35px;
+  //color: #fff;
 }
 
 .hero__text{
-  font-size: 14px;
+  font-size: 18px;
+  //color: #fff;
   line-height: 20px;
-  font-weight: 400;
+  font-weight: 500;
   text-align: center;
+}
+
+#slide1 .hero__text-container{
+  top: 0;
+}
+
+#slide2 .hero__text-container{
+  top: 0;
+}
+
+#slide3 .hero__text-container{
+  top: 0;
 }
 
 .welcome{
@@ -53,7 +59,6 @@
 }
 
 .form{
-  background-image: url('../../imgs/form-backgroundSmall.jpg');
   background-position: center;
   background-size: cover;
   padding: 80px 0;
@@ -109,6 +114,7 @@
   font-size: 48px;
   font-weight: 600;
   text-align: center;
+  margin: 0 auto;
 }
 
 .numbers__item-text{
@@ -129,18 +135,6 @@
   background-size: cover;
 }
 
-#asset__image1{
-  background-image: url('../../imgs/asset1Small.jpg');
-}
-
-#asset__image2{
-  background-image: url('../../imgs/asset2Small.jpg');
-}
-
-#asset__image3{
-  background-image: url('../../imgs/asset3Small.jpg');
-}
-
 .asset__text-container{
   background-color: #f7f7f7;
   padding: 80px;
@@ -152,6 +146,30 @@
 
 .asset__text{
   text-align: center;
+}
+
+.swiper-button-prev{
+  background-color: #000;
+  color: $lightGray;
+}
+
+.swiper-button-prev::after{
+  font-size: 25px;
+  font-weight: 600;
+  padding: 5px;
+  background-color: #000;
+}
+
+.swiper-button-next{
+  background-color: #000;
+  color: $lightGray;
+}
+
+.swiper-button-next::after{
+  font-size: 25px;
+  font-weight: 600;
+  padding: 5px;
+  background-color: #000;
 }
 
 @import "./small";

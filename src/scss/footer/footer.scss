@@ -1,4 +1,10 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
 $footerBackgroundColor: #191919;
+
+@import "../vars";
 
 .bbFooter{
   background-color: $footerBackgroundColor;
@@ -18,12 +24,13 @@ $footerBackgroundColor: #191919;
 
 .bbFooter__social{
   display: flex;
-  padding: 30px 90px;
+  padding: 30px 40px;
   justify-content: space-around;
 }
 
 .bbFooter__social-icon{
-  width: 30px;
+  width: 35px;
+  height: 35px;
   cursor: pointer;
 }
 

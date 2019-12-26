@@ -1,4 +1,35 @@
 // Medium devices (tablets, 768px and up)
 @include media-breakpoint-up(md) {
+  .cbtHeader{
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+  }
 
+  .cbtHeader__logo-container{
+    background-color: $headerBackgroundColor;
+    padding: 15px 0;
+  }
+
+  .cbtHeader__menu-container-small{
+    display: none;
+  }
+
+  .cbtHeader__navList-container-small{
+    display: none;
+  }
+
+  .cbtHeader__menu-container{
+    display: block;
+    background-color: $menuBackgroundColor;
+  }
+
+  .cbtHeader__navList-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 3px 4%;
+    color: #e0e0e0;
+    list-style: none;
+  }
 }

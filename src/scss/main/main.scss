@@ -2,18 +2,8 @@
 **Author: Víctor Hugo Escareño Crespo
 */
 
-//Fonts and colors
-$darkGray: #313131;
-$lightGray: #919b9b;
-$serifFont: 'Playfair Display', serif;
-$sansSerifFont: 'Lato', sans-serif;
-$sectionTopMarginSmall: 50px;
-$titleBottomMarginSmall: 25px;
-$subtitleBottomMarginSmall: 20px;
-$sectionTopMarginLarge: 70px;
-$titleBottomMarginLarge: 30px;
-$subtitleBottomMarginLarge: 35px;
-
+//Project variables
+@import "../vars";
 
 //Bootstrap imports
 @import "~bootstrap/scss/functions";

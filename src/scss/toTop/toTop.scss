@@ -1,0 +1,27 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+$footerBackgroundColor: #191919;
+
+@import "../vars";
+
+.toTop__container{
+  background-color: #000;
+  padding: 10px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 3;
+  cursor: pointer;
+  border-radius: 5px;
+  display: none;
+}
+
+.toTop{
+  width: 38px;
+}
+
+@import "./medium";
+@import "./large";
+@import "./xLarge";

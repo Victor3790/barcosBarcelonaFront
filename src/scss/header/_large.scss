@@ -1,4 +1,6 @@
 // Large devices (desktops, 992px and up)
 @include media-breakpoint-up(lg) {
-
+  .cbtHeader__navList-container{
+    padding: 3px 5%;
+  }
 }
