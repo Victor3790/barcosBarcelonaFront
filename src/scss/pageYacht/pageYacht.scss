@@ -1,0 +1,14 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+@import "../vars";
+
+.pageHeader{
+  height: 80vh!important;
+}
+
+@import "./small";
+@import "./medium";
+@import "./large";
+@import "./xLarge";

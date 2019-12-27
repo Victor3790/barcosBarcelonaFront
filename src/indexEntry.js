@@ -6,3 +6,5 @@ import './scss/smallMenu/smallMenu.scss';
 import './scss/footer/footer.scss';
 
 import './js/index.js';
+import './js/smallMenu.js';
+import './js/toTop.js';

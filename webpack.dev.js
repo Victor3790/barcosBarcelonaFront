@@ -3,8 +3,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: {
-    index: [path.resolve(__dirname,'src/indexDevEntry.js'),path.resolve(__dirname,'src/indexEntry.js')],
-    page: [path.resolve(__dirname,'src/pageDevEntry.js'),path.resolve(__dirname,'src/pageEntry.js')]
+    index:     [path.resolve(__dirname,'src/indexDevEntry.js'),path.resolve(__dirname,'src/indexEntry.js')],
+    page:      [path.resolve(__dirname,'src/pageDevEntry.js'),path.resolve(__dirname,'src/pageEntry.js')],
+    pageYacht: [path.resolve(__dirname,'src/pageYachtDevEntry.js'),path.resolve(__dirname,'src/pageYachtEntry.js')]
   },
   mode: 'development',
   devServer: {
@@ -36,6 +37,11 @@ module.exports = {
       template: path.resolve(__dirname,'src/page.html'),
       chunks: ['page'],
       filename: './page.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname,'src/pageYacht.html'),
+      chunks: ['pageYacht'],
+      filename: './pageYacht.html'
     })
   ]
 };
