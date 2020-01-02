@@ -1,0 +1,6 @@
+// Extra large devices (large desktops, 1200px and up)
+@include media-breakpoint-up(xl) {
+  .yacht__container:nth-child(3){
+    margin-top: 200px;
+  }
+}

@@ -15,9 +15,8 @@
 }
 
 .cbtSmallMenu__bar{
-  height: 4px;
-  width: 40px;
-  border-radius: 5px;
+  height: 3px;
+  border-radius: 12px;
   background-color: $lightGray;
   margin: 9px 0;
 }
@@ -33,8 +32,8 @@
 }
 
 .cbtSmallMenu__bar:nth-child(3){
-  width: 100%;
-  margin-right: 5px;
+  width: 38;
+  margin-left: 7px;
 }
 
 .cbtSmallMenu__close {

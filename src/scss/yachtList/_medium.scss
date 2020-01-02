@@ -1,0 +1,10 @@
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-up(md) {
+  .yacht__container:nth-child(1){
+    margin-top: 200px;
+  }
+
+  .yacht__container:nth-child(2){
+    margin-top: 200px;
+  }
+}

@@ -5,7 +5,9 @@ module.exports = {
   entry: {
     index:     [path.resolve(__dirname,'src/indexDevEntry.js'),path.resolve(__dirname,'src/indexEntry.js')],
     page:      [path.resolve(__dirname,'src/pageDevEntry.js'),path.resolve(__dirname,'src/pageEntry.js')],
-    pageYacht: [path.resolve(__dirname,'src/pageYachtDevEntry.js'),path.resolve(__dirname,'src/pageYachtEntry.js')]
+    pageYacht: [path.resolve(__dirname,'src/pageYachtDevEntry.js'),path.resolve(__dirname,'src/pageYachtEntry.js')],
+    yachtList: [path.resolve(__dirname,'src/yachtListDevEntry.js'),path.resolve(__dirname,'src/yachtListEntry.js')]
+
   },
   mode: 'development',
   devServer: {
@@ -42,6 +44,11 @@ module.exports = {
       template: path.resolve(__dirname,'src/pageYacht.html'),
       chunks: ['pageYacht'],
       filename: './pageYacht.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname,'src/yachtList.html'),
+      chunks: ['yachtList'],
+      filename: './yachtList.html'
     })
   ]
 };

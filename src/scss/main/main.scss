@@ -80,13 +80,22 @@ img{
 
 .button--gray{
   background-color: $lightGray;
+  color: #fff;
+  border-radius: 6px;
 }
 
 .title-line{
   height: 1px;
   width: 20%;
   background-color: #000;
+}
+
+.title-line--center{
   margin: 0 auto;
+}
+
+.title-line--left{
+  margin: 0;
 }
 
 //Media queries

@@ -1,0 +1,76 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+@import "../vars";
+
+.yacht{
+  padding: 30px 0;
+}
+
+.yacht__type{
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.yacht__name{
+  text-transform: capitalize;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.yacht__picture{
+  width: 100%;
+  margin-top: 30px;
+}
+
+.yacht__details{
+  background-color: $darkGray;
+  padding-left: 20px;
+  table{
+    width: 100%;
+  }
+}
+
+.yacht__detail{
+  display: block;
+  padding: 10px 0;
+  color: #ebebeb;
+  width: 100%;
+  border-bottom: 1px solid $lightGray;
+}
+
+.yacht__detail:last-child{
+  margin-bottom: 60px;
+}
+
+.yacht__detail-header{
+  font-family: $serifFont;
+  font-size: 21px;
+  line-height: 28px;
+  padding-right: 7px;
+}
+
+.yacht__detail-data{
+  font-size: 20px;
+  line-height: 28px;
+  padding-left: 7px;
+}
+
+.yacht__button{
+  width: 150px;
+  position: relative;
+  bottom: 18px;
+  margin: 0 auto;
+  p{
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+
+@import "./small";
+@import "./medium";
+@import "./large";
+@import "./xLarge";

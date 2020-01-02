@@ -3,6 +3,7 @@ jQuery(document).ready(function () {
   var mySwiper = new Swiper ('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
+    effect: 'fade',
     loop: true,
     autoplay: {
       delay: 9000,

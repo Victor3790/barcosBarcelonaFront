@@ -13,13 +13,43 @@
   <title>IBIZA YACHTING GROUP</title>
   <style type="text/css">
     .pageHeader{
-      background-image: url("/src/imgs/quienes-somos.jpg");
+      background-image: url("/src/imgs/aboutSmall.jpg");
     }
 
     @media (min-width: 768px){
-      /*.pageHeader{
+      .pageHeader{
         background-image: url("/src/imgs/about.jpg");
-      }*/
+      }
+    }
+
+    @media  (max-width: 768px) and (orientation: landscape) {
+      .pageHeader{
+        background-image: url("/src/imgs/aboutSmallLandscape.jpg");
+      }
+    }
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: 768px) and (orientation: landscape),
+    only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: 768px) and (orientation: landscape),
+    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-width: 768px) and (orientation: landscape),
+    only screen and (        min-device-pixel-ratio: 2)      and (max-width: 768px) and (orientation: landscape),
+    only screen and (                min-resolution: 192dpi) and (max-width: 768px) and (orientation: landscape),
+    only screen and (                min-resolution: 2dppx)  and (max-width: 768px) and (orientation: landscape) {
+      .pageHeader{
+        background-image: url("/src/imgs/aboutSmallLandscapeRetina.jpg");
+      }
+    }
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: 576px),
+    only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: 576px),
+    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-width: 576px),
+    only screen and (        min-device-pixel-ratio: 2)      and (max-width: 576px),
+    only screen and (                min-resolution: 192dpi) and (max-width: 576px),
+    only screen and (                min-resolution: 2dppx)  and (max-width: 576px) {
+      .pageHeader{
+        background-image: url("/src/imgs/aboutSmallRetina.jpg");
+      }
     }
   </style>
 </head>

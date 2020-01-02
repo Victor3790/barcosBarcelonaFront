@@ -46,6 +46,41 @@
       background-image: url("/src/imgs/asset3Small.jpg");
     }
 
+    @media  (max-width: 768px) and (orientation: landscape) {
+      #slide1{
+        background-image: url("/src/imgs/slide1SmallLandscape.jpg");
+      }
+
+      #slide2{
+        background-image: url("/src/imgs/slide2SmallLandscape.jpg");
+      }
+
+      #slide3{
+        background-image: url("/src/imgs/slide3SmallLandscape.jpg");
+      }
+
+    }
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: 768px) and (orientation: landscape),
+    only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: 768px) and (orientation: landscape),
+    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-width: 768px) and (orientation: landscape),
+    only screen and (        min-device-pixel-ratio: 2)      and (max-width: 768px) and (orientation: landscape),
+    only screen and (                min-resolution: 192dpi) and (max-width: 768px) and (orientation: landscape),
+    only screen and (                min-resolution: 2dppx)  and (max-width: 768px) and (orientation: landscape) {
+      #slide1{
+        background-image: url("/src/imgs/slide1SmallLandscapeRetina.jpg");
+      }
+
+      #slide2{
+        background-image: url("/src/imgs/slide2SmallLandscapeRetina.jpg");
+      }
+
+      #slide3{
+        background-image: url("/src/imgs/slide3SmallLandscapeRetina.jpg");
+      }
+    }
+
     @media
     only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: 576px),
     only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: 576px),
@@ -135,9 +170,10 @@
           <h5 class="hero__text-header">
             Alquiler de yates en Ibiza
           </h5>
-          <p class="hero__text">
-            Toda la oferta náutica a su alcance en una sola gestión y sin costes adicionales.
-          </p>
+          <h4>SIN INTERMEDIARIOS</h4>
+          <!--<p class="hero__text">
+
+          </p>-->
           <div class="button button--black">
             <p>Leer más</p>
           </div>
@@ -152,7 +188,7 @@
             Alquiler de yates de lujo
           </h5>
           <p class="hero__text">
-            Disfrute del privilegio de tener su barco en el lugar del mundo que desee.
+            Toda la oferta náutica a su alcance en una sola gestión y sin costes adicionales.
           </p>
           <div class="button button--black">
             <p>Leer más</p>
@@ -193,7 +229,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-4">
-            <input class="form__text-input" type="text" name="searchTerm" value="ASTILLERO">
+          <input class="form__text-input" type="text" name="searchTerm" value="ASTILLERO">
         </div>
         <div class="col-12 col-md-4">
           <input class="form__text-input" type="text" name="searchTerm" value="ESLORA">
@@ -201,6 +237,9 @@
         <div class="col-12 col-md-4">
           <input class="form__text-input" type="text" name="searchTerm" value="MOTOR / VELA">
         </div>
+        <!--<div class="col-12 col-md-4">
+          <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        </div>-->
       </div>
     </div>
   </div>
@@ -244,7 +283,7 @@
       <div class="row">
         <div class="col">
           <h4 class="numbers__title">IBIZA YACHTING GROUP<br> en cifras</h4>
-          <div class="title-line"></div>
+          <div class="title-line title-line--center"></div>
         </div>
       </div>
       <div class="row">

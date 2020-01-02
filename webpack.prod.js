@@ -11,6 +11,7 @@ module.exports = {
       index: [path.resolve(__dirname,'src/indexEntry.js')],
       page: [path.resolve(__dirname,'src/pageEntry.js')],
       pageYacht: [path.resolve(__dirname,'src/pageYachtEntry.js')],
+      yachtList: [path.resolve(__dirname,'src/yachtListEntry.js')],
     },
     output: {
       filename: '[name].[hash].js'
@@ -57,6 +58,11 @@ module.exports = {
         template: path.resolve(__dirname, 'src/pageYacht.html'),
         chunks: ['pageYacht'],
         filename: './pageYacht.html',
+      }),
+      new HtmlWebpackPlugin({
+        template: path.resolve(__dirname, 'src/yachtList.html'),
+        chunks: ['yachtList'],
+        filename: './yachtList.html',
       }),
       new MiniCssExtractPlugin({
         filename: '[name].[hash].css'

@@ -7,7 +7,8 @@
 .pageHeader{
   position: relative;
   height: 50vh;
-  background-position: center;
+  min-height: 400px;
+  background-position: top;
   background-size: cover;
 }
 
