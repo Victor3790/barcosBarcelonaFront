@@ -2,6 +2,7 @@
 @include media-breakpoint-up(md) {
   .hero{
     height: 100vh;
+    min-height: 650px;
   }
 
   .hero__text-container{
@@ -16,6 +17,7 @@
 
   #slide2 .hero__text-container{
     top: 135px;
+    left: 300px;
   }
 
   #slide3 .hero__text-container{
@@ -58,6 +60,10 @@
 
   .form{
     padding: 100px 0;
+  }
+
+  .logos{
+    margin-top: $sectionTopMarginLarge;
   }
 
 }

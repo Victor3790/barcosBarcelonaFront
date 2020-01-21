@@ -11,31 +11,6 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
   <title>IBIZA YACHTING GROUP</title>
-  <style type="text/css">
-    .pageHeader{
-      background-image: url("/src/imgs/pageYacht1Small.jpg");
-    }
-
-    .imgYacht{
-      width: 100%;
-      height: 100%;
-      padding: 10px 0;
-    }
-
-    h2{
-      padding: 50px 0;
-    }
-
-    td{
-      padding: 0 8px;
-    }
-
-    @media (min-width: 768px){
-      .pageHeader{
-        background-image: url("/src/imgs/pageYacht1.jpg");
-      }
-    }
-  </style>
 </head>
 <body>
   <header class="cbtHeader">
@@ -65,32 +40,50 @@
     </div>
   </header>
 
-  <div class="pageHeader">
+  <div class="pageHeaderYacht">
+    <img class="imgHeader" src="imgs/pageYacht1.jpg" alt="">
     <div class="pageHeader__title-container">
       <h1 class="pageHeader__title">
         FINCANTIERI 440
       </h1>
     </div>
-    <div class="pageHeader__bottomLine"></div>
   </div>
+  <div class="pageHeader__bottomLine-yacht"></div>
 
   <main class="content">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-4">
-          <img class="imgYacht" src="imgs/pageYacht3.jpg" alt="">
-        </div>
-        <div class="col-12 col-lg-4">
-          <img class="imgYacht" src="imgs/pageYacht4.jpg" alt="">
-        </div>
-        <div class="col-12 col-lg-4">
-          <img class="imgYacht" src="imgs/pageYachts.jpg" alt="">
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
         <div class="col-12 col-lg-8">
+          <div class="container">
+            <div class="row">
+              <div class="col-8 col-sm-7 col-md-6 col-lg-7">
+                <h4 class="yacht__type">yate a motor</h4>
+                <h2 class="yacht__name">Fincantieri 440</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <h5 class="yacht__guests-title">Invitados</h5>
+              </div>
+              <div class="col-4">
+                <h5>Camarotes</h5>
+              </div>
+              <div class="col-4">
+                <h5 class="yacht__crew-title">Crew</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <h2 class="yacht__guests">12</h2>
+              </div>
+              <div class="col-4">
+                <h2 class="yacht__cabins">5</h2>
+              </div>
+              <div class="col-4">
+                <h2 class="yacht__crew">12</h2>
+              </div>
+            </div>
+          </div>
           <h2>Descripción</h2>
           <p>
             Se trata de uno de los yates de lujo más impresionantes que podemos
@@ -126,68 +119,63 @@
         </div>
         <div class="col-12 col-lg-4">
           <h2>Especificaciones</h2>
-          <table style="margin: 0 auto;">
-            <tr>
-              <td>Eslora:</td><td>18,5 metros</td>
-            </tr>
-            <tr>
-              <td>Manga:</td><td>134 metros</td>
-            </tr>
-            <tr>
-              <td>Calado:</td><td>5,5 metros</td>
-            </tr>
-            <tr>
-              <td>Motores:</td><td>Caterpillar 3512 B DI-TA</td>
-            </tr>
-            <tr>
-              <td>Velocidad <br>de crucero:</td><td>20 nudos</td>
-            </tr>
-            <tr>
-              <td>Velocidad máx.:</td><td>24 nudos</td>
-            </tr>
-            <tr>
-              <td>Autonomía:</td><td>5.000 millas</td>
-            </tr>
-            <tr>
-              <td>Generadores:</td><td>3x 300 kw CAT</td>
-            </tr>
-            <tr>
-              <td>Fuel:</td><td>200.000 litros</td>
-            </tr>
-            <tr>
-              <td>Agua:</td><td>28.000 litros</td>
-            </tr>
-          </table>
-          <h2>Equipamiento</h2>
-          <table>
-            <tr>
-              <td>Jacuzzi spa en cubierta</td>
-            </tr>
-            <tr>
-              <td>Gimnasio</td>
-            </tr>
-            <tr>
-              <td>Sauna</td>
-            </tr>
-            <tr>
-              <td>1 Embarcación auxiliar</td>
-            </tr>
-            <tr>
-              <td>1 Embarcación auxiliar</td>
-            </tr>
-            <tr>
-              <td>2 motos de agua</td>
-            </tr>
-            <tr>
-              <td>Nsive audio & visual entertainment system including flat & plasma screen televisions, satellite television, LINN CD server and Creston touch screen remotes throughout vesseidoscope DVD server, tral.</td>
-            </tr>
-            <tr>
-              <td>PRECIO: 990.000 € – 1.500.000 €/SEMANA</td>
-            </tr>
-            <tr>
-              <td>ZONA DE NAVEGACIÓN: MEDITERRANEO</td>
-            </tr>
-          </table>
+          <div class="yacht__details">
+            <table>
+              <tr class="yacht__detail">
+                <th class="yacht__detail-header">Eslora</th>
+                <td class="yacht__detail-data">18,5 m</td>
+              </tr>
+              <tr class="yacht__detail">
+                <th class="yacht__detail-header">Manga</th>
+                <td class="yacht__detail-data">134 m</td>
+              </tr>
+              <tr class="yacht__detail">
+                <th class="yacht__detail-header">Calado</th>
+                <td class="yacht__detail-data">5,5 m</td>
+              </tr>
+              <tr class="yacht__detail">
+                <th class="yacht__detail-header">Motores</th>
+                <td class="yacht__detail-data">Caterpillar 3512 B DI-TA</td>
+              </tr>
+              <tr class="yacht__detail">
+                <th class="yacht__detail-header">Velocidad</th>
+                <td class="yacht__detail-data">20 nudos</td>
+              </tr>
+              <tr class="yacht__detail">
+                <th class="yacht__detail-header">Velocidad máx.</th>
+                <td class="yacht__detail-data">24 nudos</td>
+              </tr>
+              <tr class="yacht__detail">
+                <th class="yacht__detail-header">Autonomía</th>
+                <td class="yacht__detail-data">5.000 millas</td>
+              </tr>
+              <tr class="yacht__detail">
+                <th class="yacht__detail-header">Generadores</th>
+                <td class="yacht__detail-data">3x 300 kw CAT</td>
+              </tr>
+              <tr class="yacht__detail">
+                <th class="yacht__detail-header">Fuel</th>
+                <td class="yacht__detail-data">200.000 litros</td>
+              </tr>
+              <tr class="yacht__detail">
+                <th class="yacht__detail-header">Agua</th>
+                <td class="yacht__detail-data">28.000 litros</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <img class="imgYacht" src="imgs/pageYacht3.jpg" alt="">
+        </div>
+        <div class="col-12 col-lg-4">
+          <img class="imgYacht" src="imgs/pageYacht4.jpg" alt="">
+        </div>
+        <div class="col-12 col-lg-4">
+          <img class="imgYacht" src="imgs/pageYachts.jpg" alt="">
         </div>
       </div>
     </div>

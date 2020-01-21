@@ -31,7 +31,7 @@ jQuery(document).ready(function () {
     }, 10);
   })
 
-  var scene1 = new ScrollMagic.Scene({
+  var scene2 = new ScrollMagic.Scene({
   triggerElement: "#scene2",
   reverse: false,
   })
@@ -43,7 +43,7 @@ jQuery(document).ready(function () {
     }, 10);
   })
 
-  var scene1 = new ScrollMagic.Scene({
+  var scene3 = new ScrollMagic.Scene({
   triggerElement: "#scene3",
   reverse: false,
   })
@@ -54,4 +54,18 @@ jQuery(document).ready(function () {
       odometer3.innerHTML = 15;
     }, 10);
   })
+
+  jQuery('.slider-input').jRange({
+    from: 1980,
+    to: 2020,
+    step: 1,
+    format: '%s',
+    width: 300,
+    showLabels: true,
+    snap: true
+  });
+
+  AOS.init({
+    once: true
+  });
 });

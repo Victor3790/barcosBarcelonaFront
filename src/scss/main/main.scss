@@ -87,7 +87,6 @@ img{
 .title-line{
   height: 1px;
   width: 20%;
-  background-color: #000;
 }
 
 .title-line--center{
@@ -96,6 +95,14 @@ img{
 
 .title-line--left{
   margin: 0;
+}
+
+.tittle-line--white{
+  background-color: #fff;
+}
+
+.tittle-line--black{
+  background-color: #000;
 }
 
 //Media queries

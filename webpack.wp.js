@@ -8,7 +8,9 @@ module.exports = {
       //Styles
       main: [path.resolve(__dirname,'src/wp/main.js')],
       index: [path.resolve(__dirname,'src/wp/index.js')],
-      page: [path.resolve(__dirname,'src/wp/page.js')]
+      page: [path.resolve(__dirname,'src/wp/page.js')],
+      pageYacht: [path.resolve(__dirname,'src/wp/pageYacht.js')],
+      yachtList: [path.resolve(__dirname,'src/wp/yachtList.js')]
     },
     output: {
       filename: '[name].js',

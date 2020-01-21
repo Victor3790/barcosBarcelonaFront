@@ -1,14 +1,14 @@
 // Small devices (landscape phones, 576px and up)
 @include media-breakpoint-up(sm){
   .hero__text-container{
-    width: 350px;
+    width: 450px;
     margin: 0;
     top: 35px ;
     left: 70px;
   }
 
   #slide2{
-    background-position: center;
+    background-position: top;
   }
 
   #slide3 .hero__text-container{
@@ -17,5 +17,9 @@
 
   .form{
     padding: 50px 80px;
+  }
+
+  .logos__container{
+    padding-top: 50px;
   }
 }

@@ -47,6 +47,30 @@
   top: 28px;
 }
 
+.swiper-button-prev{
+  background-color: #000;
+  color: $lightGray;
+}
+
+.swiper-button-prev::after{
+  font-size: 25px;
+  font-weight: 600;
+  padding: 5px;
+  background-color: #000;
+}
+
+.swiper-button-next{
+  background-color: #000;
+  color: $lightGray;
+}
+
+.swiper-button-next::after{
+  font-size: 25px;
+  font-weight: 600;
+  padding: 5px;
+  background-color: #000;
+}
+
 .welcome{
   margin-top: $sectionTopMarginSmall;
 }
@@ -124,6 +148,7 @@
 
 .assets{
   margin-top: $sectionTopMarginSmall;
+  overflow: hidden;
 }
 
 .asset{
@@ -149,28 +174,29 @@
   text-align: center;
 }
 
-.swiper-button-prev{
-  background-color: #000;
-  color: $lightGray;
+.logos{
+  background-color: #313131;
+  padding-top: 30px;
+  margin-top: $sectionTopMarginSmall;
 }
 
-.swiper-button-prev::after{
-  font-size: 25px;
-  font-weight: 600;
-  padding: 5px;
-  background-color: #000;
+.logos__container{
+  width: 100%;
+  padding-top: 30px;
 }
 
-.swiper-button-next{
-  background-color: #000;
-  color: $lightGray;
+.logos__title{
+  color: #f7f7f7;
+  text-align: left;
 }
 
-.swiper-button-next::after{
-  font-size: 25px;
-  font-weight: 600;
-  padding: 5px;
-  background-color: #000;
+.logo{
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.bbFooter{
+  margin-top: 2px!important;
 }
 
 @import "./small";
